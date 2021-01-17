@@ -26,7 +26,7 @@ body {
   background-color: var(--main-background-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
-  max-width: max-content;
+  max-width: 100%;
 }
 
 * Fonts for headers */
