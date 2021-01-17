@@ -67,40 +67,59 @@ ul {
   .black {
     color: var(--logo-header-second-part-color);
     margin-left: 5px;
-
   }
+  
   .white {
     color: var(--logo-footer-second-part-color);
+    margin-left: 5px;
   }
-  /* Hover&focus 4 white logo */
-  .logo .white:hover,
-  .logo .white:focus {
+
+    /* Hover&focus 4 white logo */
+    .logo .white:hover,
+    .logo .white:focus {
+      color: var(--accent-color);
+      background-color: var(--primary-text-color);
+    }
+
+    /* hover & focus 4 black logo */
+    .logo .black:hover,
+    .logo .black:focus {
+      color: var(--logo-footer-second-part-color);
+      background-color:var(--logo-header-second-part-color);
+    }
+
+  /* logo-ru  */
+  .logo-ru {
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 40px;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  /* Hover&focus 4 white logo -ru*/
+  .logo-ru .white:hover,
+  .logo-ru .white:focus {
     color: var(--accent-color);
     background-color: var(--primary-text-color);
   }
-  /* hover & focus 4 black logo */
-  .logo .black:hover,
-  .logo .black:focus {
+  
+  /* hover & focus 4 black logo-ru */
+  .logo-ru .black:hover,
+  .logo-ru .black:focus {
     color: var(--logo-footer-second-part-color);
     background-color:var(--logo-header-second-part-color);
   }
   /* === end logo style === */
 
-  /* Site nav */
-  .site-nav .link {
-    color: var(--primary-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-  }
-
-  .site-nav .link:hover,
-  .site-nav .link:focus {
-    color: var(--accent-color);
-  }
-
   /* Contacts nav */
+
+  .contacts {
+    text-align: right;
+    margin-right: 30px;
+  }
   .link {
     color: var(--footer-link-color);
   }
@@ -118,10 +137,6 @@ ul {
   }
   /* == end nav == */
 
-  .header-title {
-    color: var(--primary-text-color);
-    text-align: center;
-  }
   .contacts-item {
     text-align: right;
   }
