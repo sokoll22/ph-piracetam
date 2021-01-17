@@ -1,0 +1,141 @@
+/* цвет основного текста color: #212121;
+цвет вторичного текста   color: #757575;
+основной цвет background: #FFFFFF;
+цвет Hero & footer #2F303A
+синий цвет #2196F3
+цвет background команды #F5F4FA
+ */
+
+  /* Declaring Variables */
+  :root {
+    --accent-color: #2196F3;
+    --primary-text-color: #ffffff;
+    --secondary-text-color: #e7f759;
+    --main-background-color: #2196F3;
+    --secondary-background-color: #F5F4FA;
+    --hero-background-color: #2F303A;
+    --footer-background-color: #2F303A;
+    --footer-adress-color: rgba(255, 255, 255, 1);
+    --footer-link-color: rgba(255,255,255,0.6);
+    --logo-footer-second-part-color: #ffffff;
+    --logo-header-second-part-color: #000000;
+}
+
+body {
+  color: var(--primary-text-color);
+  background-color: var(--main-background-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+  max-width: 1040px;
+}
+
+* Fonts for headers */
+h1, h2, h3, h4,h5,h6 {
+  font-family: Roboto;
+}
+/* end fonts for headers */
+
+/* --link decoration --*/
+.contacts-list .link {
+  color: var(--secondary-text-color);
+  font-size: 18px;
+}
+a {
+   text-decoration: none;
+ }
+ /* --- end link decoration */
+
+/* List decoration */
+ul {
+  list-style: none;
+}
+/* end list decoration */
+
+/*======Header===== */
+
+  /* ===Logo style=== */
+  .logo {
+    color: var(--primary-text-color);
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 40px;
+    margin-left: 30px;
+    border-radius: 5px;
+  }
+  .black {
+    color: var(--logo-header-second-part-color);
+    margin-left: 5px;
+
+  }
+  .white {
+    color: var(--logo-footer-second-part-color);
+  }
+  .logo .white:hover,
+  .logo .white:focus {
+    color: var(--accent-color);
+    background-color: var(--primary-text-color);
+  }
+  .logo .black:hover,
+  .logo .black:focus {
+    color: var(--logo-footer-second-part-color);
+    background-color:var(--logo-header-second-part-color);
+  }
+  /* === end logo style === */
+
+  /* Site nav */
+  .site-nav .link {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+
+  .site-nav .link:hover,
+  .site-nav .link:focus {
+    color: var(--accent-color);
+  }
+
+  /* Contacts nav */
+  .link {
+    color: var(--footer-link-color);
+  }
+  .contacts .link {
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+  .contacts .link:hover,
+  .contacts .link:focus {
+    color: var(--primary-text-color);
+  }
+  /* == end nav == */
+
+  .header-title {
+    color: var(--primary-text-color);
+    text-align: center;
+  }
+  .header-link {
+    text-align: right;
+  }
+
+/* ====End header=== */
+
+/* ===Footer==== */
+.footer {
+  background-color: var(--footer-background-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.adress {
+  color: var(--footer-adress-color);
+}
+.link {
+  color: var(--footer-link-color);
+}
+/* ===End footer */
