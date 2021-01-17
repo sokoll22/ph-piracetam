@@ -72,11 +72,13 @@ ul {
   .white {
     color: var(--logo-footer-second-part-color);
   }
+  /* Hover&focus 4 white logo */
   .logo .white:hover,
   .logo .white:focus {
     color: var(--accent-color);
     background-color: var(--primary-text-color);
   }
+  /* hover & focus 4 black logo */
   .logo .black:hover,
   .logo .black:focus {
     color: var(--logo-footer-second-part-color);
@@ -105,10 +107,11 @@ ul {
   .contacts .link {
     color: var(--secondary-text-color);
     font-weight: 500;
-    font-size: 14px;
+    font-size: 24px;
     line-height: 1.2;
     letter-spacing: 0.02em;
   }
+  /* hover & foc */
   .contacts .link:hover,
   .contacts .link:focus {
     color: var(--primary-text-color);
