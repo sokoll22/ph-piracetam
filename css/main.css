@@ -6,12 +6,22 @@
 цвет background команды #F5F4FA
  */
 
-  /* Declaring Variables */
+ /*===== Set box-sizing to border-box ==== */
+ html {
+   box-sizing: border-box;
+ }
+ *, 
+ *::before, 
+ *::after {
+   box-sizing: inherit;
+ }
+
+  /* ==== Declaring Variables === */
   :root {
     --accent-color: #2196F3;
     --primary-text-color: #ffffff;
     --secondary-text-color: #e7f759;
-    --main-background-color: #2196F3;
+    --main-background-color: rgba(33,150, 243, 0.7);
     --secondary-background-color: #F5F4FA;
     --hero-background-color: #2F303A;
     --footer-background-color: #2F303A;
@@ -19,14 +29,18 @@
     --footer-link-color: rgba(255,255,255,0.6);
     --logo-footer-second-part-color: #ffffff;
     --logo-header-second-part-color: #000000;
+    --outline: 5px dotted yellow;
 }
-
+/* === body style === */
 body {
+  margin: 0;
   color: var(--primary-text-color);
   background-color: var(--main-background-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
   max-width: 100%;
+  margin:30px;
+  max-width: 1740px;
 }
 
 * Fonts for headers */
@@ -52,6 +66,14 @@ ul {
 /* end list decoration */
 
 /*======Header===== */
+.header-container {
+  /* margin: 0 auto; */
+  /* border-width: 5px;
+  border-color: yellow;
+  border-style: dotted;
+  padding: 0 15px; */
+  outline: var(--outline);
+}
 
   /* ===Logo style=== */
   .logo {
@@ -60,8 +82,7 @@ ul {
     font-size: 26px;
     font-weight: 700;
     line-height: 1.2;
-    margin-top: 40px;
-    margin-left: 30px;
+    margin: 0 auto;
     border-radius: 5px;
   }
   .black {
@@ -94,9 +115,9 @@ ul {
     font-size: 26px;
     font-weight: 700;
     line-height: 1.2;
-    margin-top: 40px;
-    text-align: center;
-    border-radius: 10px;
+    margin: 0 auto;
+    border-radius: 5px;
+    max-width: 300px;
   }
 
   /* Hover&focus 4 white logo -ru*/
@@ -120,8 +141,33 @@ ul {
     text-align: right;
     margin-right: 30px;
   }
+  .usa {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .e-mail {
+    margin-left: 100px;
+    /* margin-right: auto; */
+  }
+  .ru {
+    margin-left: 150px;
+    margin-right: 30px;
+  }
+  /* Making button from link 
+  with help off "inline-block" */
   .link {
-    color: var(--footer-link-color);
+    display: inline-block;
+    padding: 16px 16px;
+
+    border-radius: 15px;
+    background-color: var(--accent-color);
+    color: var(--primary-text-color);
+
+    font-family: sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: none;
+    font-weight: 500;
   }
   .contacts .link {
     color: var(--secondary-text-color);
@@ -133,7 +179,8 @@ ul {
   /* hover & foc */
   .contacts .link:hover,
   .contacts .link:focus {
-    color: var(--primary-text-color);
+    color: var(--accent-color);
+    background-color: var(--primary-text-color);
   }
   /* == end nav == */
 
@@ -143,6 +190,22 @@ ul {
 
 /* ====End header=== */
 
+/* ====== Main block ====== */
+.main-container {
+  width: 1440px;
+  outline: var(--outline);
+  margin: 20px auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.title {
+  font-family: Raleway;
+  text-align: center;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
 /* ===Footer==== */
 .footer {
   background-color: var(--footer-background-color);
